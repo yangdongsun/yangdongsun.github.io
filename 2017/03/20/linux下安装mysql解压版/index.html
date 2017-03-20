@@ -8,10 +8,10 @@
   <meta name="description" content="">
   <meta name="author" content="杨东旭">
   <!-- Open Graph Data -->
-  <meta property="og:title" content="Hexo"/>
+  <meta property="og:title" content="linux下安装mysql解压版"/>
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Hexo"/>
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   <meta property="og:image" content="http://yoursite.comundefined"/>
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -43,7 +43,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-title with-background-image">
-          <p class="title">无标题文章</p>
+          <p class="title">linux下安装mysql解压版</p>
           <p class="subtitle"></p>
         </div>
         <div class="site-menu with-background-image">
@@ -101,17 +101,23 @@
           <!-- Date -->
           <span class="date-time info">On
             <span class="date">2017-03-20</span>
-            <span class="time">12:26:18</span>
+            <span class="time">12:27:29</span>
           </span>
           
         </div>
         <!-- Tags -->
         
+          <div class="post-tags text-muted">
+            Tags: 
+
+<a class="tag" href="/tags/dddd/">#dddd</a>
+
+
+          </div>
+        
         <!-- Post Main Content -->
         <div class="post-content">
-          <hr>
-<p>title: linux下安装mysql解压版<br>date: 2017-03-20 12:12:55<br>tags: dddd</p>
-<h4 id="1、下载安装包"><a href="#1、下载安装包" class="headerlink" title="1、下载安装包"></a>1、下载安装包</h4><p><a href="http://dev.mysql.com/downloads/mysql/#downloads" target="_blank" rel="external">http://dev.mysql.com/downloads/mysql/#downloads</a><br>推荐下载通用安装方法的TAR包<br>2.检查库文件是否存在，如有删除。</p>
+          <h4 id="1、下载安装包"><a href="#1、下载安装包" class="headerlink" title="1、下载安装包"></a>1、下载安装包</h4><p><a href="http://dev.mysql.com/downloads/mysql/#downloads" target="_blank" rel="external">http://dev.mysql.com/downloads/mysql/#downloads</a><br>推荐下载通用安装方法的TAR包<br>2.检查库文件是否存在，如有删除。</p>
 <p>[root@localhost Desktop]$ rpm -qa | grep mysql<br>mysql-libs-5.1.52-1.el6_0.1.x86_64<br>[root@localhost ~]$ rpm -e mysql-libs-5.1.52.x86_64 –nodeps<br>[root@localhost ~]$</p>
 <p>3.检查mysql组和用户是否存在，如无创建。</p>
 <p>[root@localhost ~]$ cat /etc/group | grep mysql<br>mysql:x:490:<br>[root@localhost ~]$ cat /etc/passwd | grep mysql<br>mysql:x:496:490::/home/mysql:/bin/bash<br>以上为默认存在的情况，如无，执行添加命令：</p>
