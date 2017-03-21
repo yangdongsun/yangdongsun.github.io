@@ -8,10 +8,10 @@
   <meta name="description" content="">
   <meta name="author" content="杨东旭">
   <!-- Open Graph Data -->
-  <meta property="og:title" content="Hexo"/>
+  <meta property="og:title" content="mybatis-config配置文件"/>
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Hexo"/>
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   <meta property="og:image" content="http://yoursite.comundefined"/>
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -35,8 +35,7 @@
 </head>
 
   <body>
-    <!-- Archive Header -->
-<!-- Page Header -->
+    <!-- Page Header -->
 
 
 <header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
@@ -44,7 +43,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-title with-background-image">
-          <p class="title">Blog Archives</p>
+          <p class="title">mybatis-config配置文件</p>
           <p class="subtitle"></p>
         </div>
         <div class="site-menu with-background-image">
@@ -90,58 +89,48 @@
 </header>
 
 
-<!-- Archive List -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      
-        <div class="archive-item">
-  <a href="/2017/03/21/mybatis映射文件配置/" class="post-title">
-    mybatis映射文件配置
-  </a>
-  <div class="date text-muted">Posted on 2017-03-21 10:54:22</div>
-</div>
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By 杨东旭</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2017-03-21</span>
+            <span class="time">09:49:06</span>
+          </span>
+          
+          <!--  Categories  -->
+            <span class="categories info">Under 
 
-      
-        <div class="archive-item">
-  <a href="/2017/03/21/mybatis-config/" class="post-title">
-    mybatis-config配置文件
-  </a>
-  <div class="date text-muted">Posted on 2017-03-21 10:54:22</div>
-</div>
+<a href="/categories/框架/">框架</a>
+</span>
+          
+        </div>
+        <!-- Tags -->
+        
+          <div class="post-tags text-muted">
+            Tags: 
 
-      
-        <div class="archive-item">
-  <a href="/2017/03/20/linux下安装mysql解压版/" class="post-title">
-    linux下安装mysql解压版
-  </a>
-  <div class="date text-muted">Posted on 2017-03-20 12:12:55</div>
-</div>
+<a class="tag" href="/tags/mybatis/">#mybatis</a>
 
-      
-        <div class="archive-item">
-  <a href="/2017/03/20/李嘉有多二/" class="post-title">
-    李嘉有多二
-  </a>
-  <div class="date text-muted">Posted on 2017-03-20 10:54:22</div>
-</div>
 
-      
-
+          </div>
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <p>mybaits-config.xml配置文件<br><a id="more"></a></p>
+<p>&lt;?xml version=”1.0” encoding=”UTF-8”?&gt;<br>&lt;!DOCTYPE configuration<br>        PUBLIC “-//mybatis.org//DTD Config 3.0//EN”<br>        “<a href="http://mybatis.org/dtd/mybatis-3-config.dtd&quot;&gt;" target="_blank" rel="external">http://mybatis.org/dtd/mybatis-3-config.dtd&quot;&gt;</a></p>
+<configuration><br>    <settings><br>        <!-- changes from the defaults for testing --><br>        <setting name="cacheEnabled" value="false"><br>        <setting name="useGeneratedKeys" value="true"><br>        <setting name="defaultExecutorType" value="REUSE"><br>    </setting></setting></setting></settings><br>    <typealiases><br>        <typealias alias="User" type="com.ydx.entity.User"><br>        <typealias alias="Article" type="com.ydx.entity.Article"><br><br>    </typealias></typealias></typealiases><br>    <environments default="development"><br>        <environment id="development"><br>            <transactionmanager type="jdbc"><br>            <datasource type="POOLED"><br>                <property name="driver" value="com.mysql.jdbc.Driver"><br>                <property name="url" value="jdbc:mysql://192.168.144.31:3306/myTest"><br>                <property name="username" value="root"><br>                <property name="password" value="mysql"><br>            </property></property></property></property></datasource><br>        </transactionmanager></environment><br>    </environments><br>    <mappers><br>        <mapper resource="mappers/UserMapper.xml"><br>        <mapper resource="mappers/ArticleMapper.xml"><br>    </mapper></mapper></mappers><br></configuration>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<!-- Pagination -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-10 col-md-10 col-md-offset-1">
-      <ul class="pagination">
-          
-          
-      </ul>
-    </div>
-  </div>
-</div>
+</article>
 
 
 

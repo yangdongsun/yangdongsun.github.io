@@ -101,7 +101,7 @@
           <!-- Date -->
           <span class="date-time info">On
             <span class="date">2017-03-20</span>
-            <span class="time">14:05:34</span>
+            <span class="time">09:49:06</span>
           </span>
           
         </div>
@@ -117,7 +117,8 @@
         
         <!-- Post Main Content -->
         <div class="post-content">
-          <h4 id="1、下载安装包"><a href="#1、下载安装包" class="headerlink" title="1、下载安装包"></a>1、下载安装包</h4><p><a href="http://dev.mysql.com/downloads/mysql/#downloads" target="_blank" rel="external">http://dev.mysql.com/downloads/mysql/#downloads</a><br>推荐下载通用安装方法的TAR包<br>2.检查库文件是否存在，如有删除。</p>
+          <p>mysql5.7<br>Centos<br><a id="more"></a></p>
+<h4 id="1、下载安装包"><a href="#1、下载安装包" class="headerlink" title="1、下载安装包"></a>1、下载安装包</h4><p><a href="http://dev.mysql.com/downloads/mysql/#downloads" target="_blank" rel="external">http://dev.mysql.com/downloads/mysql/#downloads</a><br>推荐下载通用安装方法的TAR包<br>2.检查库文件是否存在，如有删除。</p>
 <p>[root@localhost Desktop]$ rpm -qa | grep mysql<br>mysql-libs-5.1.52-1.el6_0.1.x86_64<br>[root@localhost ~]$ rpm -e mysql-libs-5.1.52.x86_64 –nodeps<br>[root@localhost ~]$</p>
 <p>3.检查mysql组和用户是否存在，如无创建。</p>
 <p>[root@localhost ~]$ cat /etc/group | grep mysql<br>mysql:x:490:<br>[root@localhost ~]$ cat /etc/passwd | grep mysql<br>mysql:x:496:490::/home/mysql:/bin/bash<br>以上为默认存在的情况，如无，执行添加命令：</p>
